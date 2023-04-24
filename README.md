@@ -70,3 +70,25 @@ Después, dentro de tu HTML, solo llamas a la clase .card y listo.
 - lg -> 1024px
 - xl -> 1280px
 - 2xl -> 1536px
+
+**Tailwind CSS es un framework tan completo que además cuenta con plugins oficiales:**
+
+- Forms
+- Typography
+- Aspect ratio
+
+```
+// instalacion
+
+npm install -D @tailwindcss/forms
+npm install -D @tailwindcss/typography
+npm install -D @tailwindcss/aspect-ratio
+
+// uso -> tailwind.config.js:
+
+plugins: [
+    require('@tailwindcss/aspect-ratio'),
+    require("@tailwindcss/forms"),
+		require("@tailwindcss/typography"),
+  ],
+```

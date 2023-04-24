@@ -4,7 +4,8 @@
   "description": "----\r **Hay dos principios para trabajar con Tailwind:**",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwind -i ./src/css/tailwind.css -o ./public/css/tailwind.css"
   },
   "keywords": [],
   "author": "",
