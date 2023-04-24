@@ -62,3 +62,11 @@ También puedes crear tus propias clases y definir un conjunto de propiedades. P
 ```
 
 Después, dentro de tu HTML, solo llamas a la clase .card y listo.
+
+**[Breakpoints:](https://tailwindcss.com/docs/responsive-design)**
+
+- sm -> 640px
+- md -> 768px
+- lg -> 1024px
+- xl -> 1280px
+- 2xl -> 1536px
