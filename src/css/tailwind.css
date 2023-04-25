@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.Caed {
-  @apply w-48 h-64 shadow-md rounded-lg flex-none;
+.Card {
+  @apply w-48 h-64 shadow-md rounded-lg flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl;
 }
