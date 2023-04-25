@@ -1,151 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Lovers</title>
+    <link rel="stylesheet" href="../public/css/tailwind.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Sofia&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Travel Lovers</title>
-  <link rel="stylesheet" href="../public/css/tailwind.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Sofia&display=swap" rel="stylesheet" />
-</head>
-
-<body class="font-Montserrat">
-  <nav></nav>
-  <div id="tab_bar">
-    <section class="w-full h-screen">
-      <div id="home">
-        <div class="w-full h-3/4">
-          <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
-            <input
-              class="outline-none p-3 rounded-full shadow-sm transition-all ease-in-out duration-400 focus-within:shadow-sm focus:ring-2 focus:w-11/12"
-              placeholder="San Francisco" type="search" name="" id="">
-            <button
-              class="w-32 rounded-full text-xl font-semibold text-primary shadow-sm p-4 bg-white transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110">
-              Explorar
-            </button>
+  <body class="font-Montserrat">
+    <nav></nav>
+    <div id="tab_bar">
+      <section class="w-full h-auto">
+        <div id="home">
+          <div class="w-full h-3/4">
+            <div
+              class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center"
+            >
+              <input
+                class="outline-none p-3 rounded-full shadow-sm transition-all ease-in-out duration-400 focus-within:shadow-sm focus:ring-2 focus:w-11/12"
+                placeholder="San Francisco"
+                type="search"
+                name=""
+                id=""
+              />
+              <button
+                class="w-32 rounded-full text-xl font-semibold text-primary shadow-sm p-4 bg-white transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110"
+              >
+                Explorar
+              </button>
+            </div>
+            <div class="w-full h-full">
+              <img src="./img/sanFrancisco.jpg" alt="" />
+            </div>
           </div>
-          <div class="w-full h-full">
-            <img src="./img/sanFrancisco.jpg" alt="">
+          <div class="p-6" id="recomendados">
+            <p class="text-3xl font-semibold text-primary">Recomendados</p>
+            <div
+              class="w-auto h-72 items-center mt-6 overflow-x-auto overflow-y-hidden overscroll-x-contain flex space-x-6 scrollbar-hide md:scrollbar-default"
+            >
+              <div class="Card">
+                <img
+                  class="w-full h-3/5 object-cover rounded-t-lg"
+                  src="./img/norway.jpg"
+                  alt=""
+                />
+                <div
+                  class="w-full h-2/5 rounded-b-lg bg-secondary text-white px-4 py-2"
+                >
+                  <p class="text-bold text-xl">Norway</p>
+                  <p class="text-md">Beautiful landscapes</p>
+                </div>
+              </div>
+              <div class="Card">
+                <img
+                  class="w-full h-3/5 object-cover rounded-t-lg"
+                  src="./img/new_york.jpg"
+                  alt=""
+                />
+                <div
+                  class="w-full h-2/5 rounded-b-lg bg-white text-terciary px-4 py-2"
+                >
+                  <p class="text-bold text-xl">New York</p>
+                  <p class="text-md">Concrete jungle</p>
+                </div>
+              </div>
+              <div class="Card">
+                <img
+                  class="w-full h-3/5 object-cover rounded-t-lg"
+                  src="./img/yosemite.jpg"
+                  alt=""
+                />
+                <div
+                  class="w-full h-2/5 rounded-b-lg bg-secondary text-white px-4 py-2"
+                >
+                  <p class="text-bold text-xl">Yosemite</p>
+                  <p class="text-md">A break from the world</p>
+                </div>
+              </div>
+              <div class="Card">
+                <img
+                  class="w-full h-3/5 object-cover rounded-t-lg"
+                  src="./img/seattle.jpg"
+                  alt=""
+                />
+                <div
+                  class="w-full h-2/5 rounded-b-lg bg-white text-terciary px-4 py-2"
+                >
+                  <p class="text-bold text-xl">Seattle</p>
+                  <p class="text-md">Big City</p>
+                </div>
+              </div>
+              <div class="Card">
+                <img
+                  class="w-full h-3/5 object-cover rounded-t-lg"
+                  src="./img/switzerland.jpg"
+                  alt=""
+                />
+                <div
+                  class="w-full h-2/5 rounded-b-lg bg-secondary text-white px-4 py-2"
+                >
+                  <p class="text-bold text-xl">Switzerland</p>
+                  <p class="text-md">Big City</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="px-6 h-full w-full relative" id="rentas_destacadas">
+            <p class="text-3xl text-primary font-semibold pb-6 mt-6">
+              Rentas Destacadas
+            </p>
+            <div
+              class="w-full h-full flex flex-col space-y-6 items-center justify-center"
+            >
+              <div class="w-full h-96 relative">
+                <img
+                  class="w-full h-full object-cover rounded-xl"
+                  src="./img/chicago.jpg"
+                  alt=""
+                />
+                <div class="absolute top-0 left-0 px-8">
+                  <p class="CardTitle">Chicago</p>
+                  <p class="text-sm mr-24 text-slate-500">
+                    2 rooms, bathroom and kitchen.
+                  </p>
+                </div>
+              </div>
+              <div class="w-full h-96 relative">
+                <img
+                  class="w-full h-full object-cover rounded-xl"
+                  src="./img/LA.jpg"
+                  alt=""
+                />
+                <div class="absolute top-0 left-0 px-8">
+                  <p class="CardTitle">Los Angeles</p>
+                  <p class="text-sm mr-24 text-slate-500">
+                    4 rooms, 3 bathrooms, kitchen and private pool.
+                  </p>
+                </div>
+              </div>
+              <div class="w-full h-96 relative">
+                <img
+                  class="w-full h-full object-cover rounded-xl"
+                  src="./img/miami.jpg"
+                  alt=""
+                />
+                <div class="absolute top-0 left-0 px-8">
+                  <p class="CardTitle">Miami</p>
+                  <p class="text-sm mr-24 text-slate-500">
+                    3 rooms, 2 bathrooms, kitchen and amazing sea view.
+                  </p>
+                </div>
+              </div>
+              <div class="w-full h-96 relative">
+                <img
+                  class="w-full h-full object-cover rounded-xl"
+                  src="./img/bali.jpg"
+                  alt=""
+                />
+                <div class="absolute top-0 left-0 px-8">
+                  <p class="CardTitle">Bali</p>
+                  <p class="text-sm mr-24 text-slate-500">
+                    2 rooms, 2 bathrooms, kitchen and private pool.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full h-full" id="faqs">
+            <div class="w-full h-full px-6 flex flex-col space-y-4">
+              <p class="text-3xl text-primary font-semibold mt-6">FAQS</p>
+              <div>
+                <p class="text-xl font-medium text-primary">
+                  Cancellation Pollicy
+                </p>
+                <p class="text-lg pt-2">
+                  Para estancias menores a una semana es importante avisar con 3
+                  días de anticipación, de caso contario será sancionado.
+                </p>
+              </div>
+              <div>
+                <p class="text-xl font-medium text-primary">Payment Methods</p>
+                <p class="">
+                  Aceptamos distintos métodos de pago: VISA, MasterCard,
+                  American Express, Paypal y Binance
+                </p>
+              </div>
+              <div>
+                <p class="text-xl font-medium text-primary">Pets</p>
+                <p class="">
+                  El tema de las mascotas dependerá directamente del anfitrión.
+                </p>
+              </div>
+              <div>
+                <p class="text-xl font-medium text-primary">
+                  Información de Seguridad
+                </p>
+                <p class="">
+                  Todas nuestras estancias cuentan con seguro en caso de
+                  accidentes
+                </p>
+              </div>
+              <div>
+                <p class="text-xl font-medium text-primary">Long Stays</p>
+                <p class="">
+                  Contamos con estancias de hasta 3 meses, en este caso es
+                  requerido un anticipo con un monto del 50% del valor de la
+                  renta
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="p-6" id="recomendados">
-          <p class="text-3xl font-semibold text-primary">Recomendados</p>
-          <div
-            class="w-auto h-72 items-center mt-6 overflow-x-auto overflow-y-hidden overscroll-x-contain flex space-x-6 scrollbar-hide md:scrollbar-default">
-            <div class="Card">
-              <img class="w-full h-3/5 object-cover rounded-t-lg" src="./img/norway.jpg" alt="">
-              <div class="w-full h-2/5 rounded-b-lg bg-secondary text-white px-4 py-2">
-                <p class="text-bold text-xl">Norway</p>
-                <p class="text-md">Beautiful landscapes</p>
-              </div>
-            </div>
-            <div class="Card">
-              <img class="w-full h-3/5 object-cover rounded-t-lg" src="./img/new_york.jpg" alt="">
-              <div class="w-full h-2/5 rounded-b-lg bg-white text-terciary px-4 py-2">
-                <p class="text-bold text-xl">New York</p>
-                <p class="text-md">Concrete jungle</p>
-              </div>
-            </div>
-            <div class="Card">
-              <img class="w-full h-3/5 object-cover rounded-t-lg" src="./img/yosemite.jpg" alt="">
-              <div class="w-full h-2/5 rounded-b-lg bg-secondary text-white px-4 py-2">
-                <p class="text-bold text-xl">Yosemite</p>
-                <p class="text-md">A break from the world</p>
-              </div>
-            </div>
-            <div class="Card">
-              <img class="w-full h-3/5 object-cover rounded-t-lg" src="./img/seattle.jpg" alt="">
-              <div class="w-full h-2/5 rounded-b-lg bg-white text-terciary px-4 py-2">
-                <p class="text-bold text-xl">Seattle</p>
-                <p class="text-md">Big City</p>
-              </div>
-            </div>
-            <div class="Card">
-              <img class="w-full h-3/5 object-cover rounded-t-lg" src="./img/switzerland.jpg" alt="">
-              <div class="w-full h-2/5 rounded-b-lg bg-secondary text-white px-4 py-2">
-                <p class="text-bold text-xl">Switzerland</p>
-                <p class="text-md">Big City</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="px-6 h-full w-full relative" id="rentas_destacadas">
-          <p class="text-3xl text-primary font-semibold pb-6 mt-6">Rentas Destacadas</p>
-          <div class="w-full h-full flex flex-col space-y-6 items-center justify-center">
-            <div class="w-full h-96 relative">
-              <img class="w-full h-full object-cover rounded-xl" src="./img/chicago.jpg" alt="">
-              <div class="absolute top-0 left-0 px-8">
-                <p class="CardTitle">Chicago</p>
-                <p class="text-sm mr-24 text-slate-500">2 rooms, bathroom and kitchen.</p>
-              </div>
-            </div>
-            <div class="w-full h-96 relative">
-              <img class="w-full h-full object-cover rounded-xl" src="./img/LA.jpg" alt="">
-              <div class="absolute top-0 left-0 px-8">
-                <p class="CardTitle">Los Angeles</p>
-                <p class="text-sm mr-24 text-slate-500">4 rooms, 3 bathrooms, kitchen and private pool.</p>
-              </div>
-            </div>
-            <div class="w-full h-96 relative">
-              <img class="w-full h-full object-cover rounded-xl" src="./img/miami.jpg" alt="">
-              <div class="absolute top-0 left-0 px-8">
-                <p class="CardTitle">Miami</p>
-                <p class="text-sm mr-24 text-slate-500">3 rooms, 2 bathrooms, kitchen and amazing
-                  sea view.</p>
-              </div>
-            </div>
-            <div class="w-full h-96 relative">
-              <img class="w-full h-full object-cover rounded-xl" src="./img/bali.jpg" alt="">
-              <div class="absolute top-0 left-0 px-8">
-                <p class="CardTitle">Bali</p>
-                <p class="text-sm mr-24 text-slate-500">2 rooms, 2 bathrooms, kitchen and private
-                  pool.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="w-full h-full" id="faqs">
-          <div class="w-full h-full px-6 flex flex-col space-y-4">
-            <p class="text-3xl text-primary font-semibold mt-6">FAQS</p>
-            <div>
-              <p class="text-xl font-medium text-primary">Cancellation Pollicy</p>
-              <p class="text-lg pt-2">
-                Para estancias menores a una semana es importante avisar con 3 días de
-                anticipación, de caso contario será sancionado.
-              </p>
-            </div>
-            <div>
-              <p class="text-xl font-medium text-primary">Payment Methods</p>
-              <p class="">
-                Aceptamos distintos métodos de pago: VISA, MasterCard, American Express,
-                Paypal y Binance
-              </p>
-            </div>
-            <div>
-              <p class="text-xl font-medium text-primary">Pets</p>
-              <p class="">El tema de las mascotas dependerá directamente del anfitrión.</p>
-            </div>
-            <div>
-              <p class="text-xl font-medium text-primary">Información de Seguridad</p>
-              <p class="">
-                Todas nuestras estancias cuentan con seguro en caso de accidentes
-              </p>
-            </div>
-            <div>
-              <p class="text-xl font-medium text-primary">Long Stays</p>
-              <p class="">
-                Contamos con estancias de hasta 3 meses, en este caso es requerido un
-                anticipo con un monto del 50% del valor de la renta
-              </p>
-            </div>
-          </div>
-        </div>
-    </section>
-    <footer></footer>
-  </div>
-</body>
-
+      </section>
+      <footer class="w-full h-auto bg-green-200 p-6 space-y-2">
+        <p class="text-lg">Acerca De</p>
+        <p class="text-sm text-blue-700">Acerca De</p>
+        <p class="text-sm text-blue-700">Inversionistas</p>
+        <p class="text-sm text-blue-700">Empleos</p>
+        <p class="text-sm text-blue-700">Terminos y Condiciones</p>
+        <p class="text-sm text-blue-700">Travel Lovers, Inc.</p>
+      </footer>
+    </div>
+  </body>
 </html>
