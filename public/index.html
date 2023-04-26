@@ -9,33 +9,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Sofia&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
 
   <body class="font-Montserrat">
     <section class="w-full h-auto">
+      <nav></nav>
       <div id="home">
         <div class="w-full h-3/4">
           <div
-            class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center"
+            class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center lg:space-y-0 lg:items-start lg:pt-28 lg:justify-start"
           >
             <input
-              class="outline-none p-3 rounded-full shadow-sm transition-all ease-in-out duration-400 focus-within:shadow-sm focus:ring-2 focus:w-11/12"
+              class="outline-none p-3 rounded-full shadow-sm transition-all ease-in-out duration-400 focus-within:shadow-sm focus:ring-2 focus:w-11/12 lg:hidden"
               placeholder="San Francisco"
               type="search"
               name=""
               id=""
             />
+            <div class="hidden h-auto lg:w-2/3 lg:flex pb-6">
+              <p class="text-4xl ml-16 font-bold">
+                Find More Locations like this
+              </p>
+            </div>
             <button
-              class="w-32 rounded-full text-xl font-semibold text-primary shadow-sm p-4 bg-white transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110"
+              class="w-32 rounded-full text-xl font-semibold text-primary shadow-sm p-4 bg-white transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110 lg:ml-16"
             >
               Explorar
             </button>
           </div>
-          <div class="w-full h-full">
-            <img src="./img/sanFrancisco.jpg" alt="" />
+          <div
+            class="w-full h-full lg:h-96 lg:bg-cover lg:bg-center bg-fixed"
+            style="background-image: url('./img/sanFranciscoDesktop.jpg')"
+          >
+            <img class="lg:hidden" src="./img/sanFrancisco.jpg" alt="" />
           </div>
         </div>
         <div class="p-6" id="recomendados">
@@ -80,6 +89,58 @@
               >
                 <p class="text-bold text-xl">Yosemite</p>
                 <p class="text-md">A break from the world</p>
+              </div>
+            </div>
+            <div class="Card">
+              <img
+                class="w-full h-3/5 object-cover rounded-t-lg"
+                src="./img/seattle.jpg"
+                alt=""
+              />
+              <div
+                class="w-full h-2/5 rounded-b-lg bg-white text-terciary px-4 py-2"
+              >
+                <p class="text-bold text-xl">Seattle</p>
+                <p class="text-md">Big City</p>
+              </div>
+            </div>
+            <div class="Card">
+              <img
+                class="w-full h-3/5 object-cover rounded-t-lg"
+                src="./img/switzerland.jpg"
+                alt=""
+              />
+              <div
+                class="w-full h-2/5 rounded-b-lg bg-secondary text-white px-4 py-2"
+              >
+                <p class="text-bold text-xl">Switzerland</p>
+                <p class="text-md">Big City</p>
+              </div>
+            </div>
+            <div class="Card">
+              <img
+                class="w-full h-3/5 object-cover rounded-t-lg"
+                src="./img/seattle.jpg"
+                alt=""
+              />
+              <div
+                class="w-full h-2/5 rounded-b-lg bg-white text-terciary px-4 py-2"
+              >
+                <p class="text-bold text-xl">Seattle</p>
+                <p class="text-md">Big City</p>
+              </div>
+            </div>
+            <div class="Card">
+              <img
+                class="w-full h-3/5 object-cover rounded-t-lg"
+                src="./img/switzerland.jpg"
+                alt=""
+              />
+              <div
+                class="w-full h-2/5 rounded-b-lg bg-secondary text-white px-4 py-2"
+              >
+                <p class="text-bold text-xl">Switzerland</p>
+                <p class="text-md">Big City</p>
               </div>
             </div>
             <div class="Card">
@@ -224,9 +285,8 @@
       <p class="text-sm text-blue-700">Terminos y Condiciones</p>
       <p class="text-sm text-blue-700">Travel Lovers, Inc.</p>
     </footer>
-    <nav></nav>
     <div
-      class="w-full h-16 bg-blue-100 fixed left-0 bottom-0 shadow-md flex space-x-8 items-center justify-center"
+      class="w-full h-16 bg-blue-100 fixed left-0 bottom-0 shadow-md flex space-x-8 items-center justify-center lg:hidden"
       id="tab_bar"
     >
       <a href="#home">
