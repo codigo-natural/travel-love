@@ -176,9 +176,11 @@
             Rentas Destacadas
           </p>
           <div
-            class="w-full h-full flex flex-col space-y-6 items-center justify-center"
+            class="w-full h-full grid grid-cols-1 lg:grid-cols-2 lg:place-items-center gap-4 lg:place-content-stretch"
           >
-            <div class="w-full h-96 relative">
+            <div
+              class="w-full h-96 relative rounded-lg overflow-hidden lg:col-span-2"
+            >
               <img
                 class="w-full h-full object-cover rounded-xl"
                 src="./img/chicago.jpg"
@@ -186,20 +188,22 @@
               />
               <div class="absolute top-0 left-0 px-8">
                 <p class="CardTitle">Chicago</p>
-                <p class="text-sm mr-24 text-slate-500">
+                <p class="text-sm mr-24 text-white text-light">
                   2 rooms, bathroom and kitchen.
                 </p>
               </div>
             </div>
-            <div class="w-full h-96 relative">
+            <div
+              class="w-full h-96 relative rounded-lg overflow-hidden lg:row-span-2 lg:h-[49rem]"
+            >
               <img
                 class="w-full h-full object-cover rounded-xl"
                 src="./img/LA.jpg"
                 alt=""
               />
-              <div class="absolute top-0 left-0 px-8">
+              <div class="absolute top-0 left-0 px-8 text-end">
                 <p class="CardTitle">Los Angeles</p>
-                <p class="text-sm mr-24 text-slate-500">
+                <p class="text-sm mr-24 text-white text-light">
                   4 rooms, 3 bathrooms, kitchen and private pool.
                 </p>
               </div>
@@ -212,7 +216,7 @@
               />
               <div class="absolute top-0 left-0 px-8">
                 <p class="CardTitle">Miami</p>
-                <p class="text-sm mr-24 text-slate-500">
+                <p class="text-sm mr-24 text-white text-light">
                   3 rooms, 2 bathrooms, kitchen and amazing sea view.
                 </p>
               </div>
@@ -225,7 +229,7 @@
               />
               <div class="absolute top-0 left-0 px-8">
                 <p class="CardTitle">Bali</p>
-                <p class="text-sm mr-24 text-slate-500">
+                <p class="text-sm mr-24 text-white text-light">
                   2 rooms, 2 bathrooms, kitchen and private pool.
                 </p>
               </div>
@@ -277,13 +281,13 @@
         </div>
       </div>
     </section>
-    <footer class="w-full h-auto bg-green-200 p-6 space-y-2">
-      <p class="text-lg">Acerca De</p>
-      <p class="text-sm text-blue-700">Acerca De</p>
-      <p class="text-sm text-blue-700">Inversionistas</p>
-      <p class="text-sm text-blue-700">Empleos</p>
-      <p class="text-sm text-blue-700">Terminos y Condiciones</p>
-      <p class="text-sm text-blue-700">Travel Lovers, Inc.</p>
+    <footer class="w-full h-auto bg-gray-100 p-6 space-y-2">
+      <p class="text-lg text-gray-400 font-semibold">Acerca De</p>
+      <p class="text-sm text-gray-400">Acerca De</p>
+      <p class="text-sm text-gray-400">Inversionistas</p>
+      <p class="text-sm text-gray-400">Empleos</p>
+      <p class="text-sm text-gray-400">Terminos y Condiciones</p>
+      <p class="text-sm text-gray-400">Travel Lovers, Inc.</p>
     </footer>
     <div
       class="w-full h-16 bg-blue-100 fixed left-0 bottom-0 shadow-md flex space-x-8 items-center justify-center lg:hidden"
