@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./public/index.html", "./src/**/*.{html,js}"],
+  darkMode: 'class',
   media: false,
   theme: {
     extend: {
@@ -8,12 +9,12 @@ module.exports = {
         ...theme("colors"),
         primary: "#cc2d4a",
         secondary: "#8fa206",
-        terciary: "#61aec9",
+        tertiary: "#61aec9",
       }),
       textColor: {
         primary: "#cc2d4a",
         secondary: "#8fa206",
-        terciary: "#61aec9",
+        tertiary: "#61aec9",
       },
       fontFamily: ['Montserrat', 'sans-serif']
     },

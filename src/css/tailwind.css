@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .Card {
-  @apply w-48 h-64 shadow-md rounded-lg flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl;
+  @apply w-48 h-64 shadow-md rounded-lg flex-none transform transition-all hover:-translate-y-2 hover:shadow-xl;
 }
 
 .CardTitle {

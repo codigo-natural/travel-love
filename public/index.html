@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,21 +14,35 @@
     />
   </head>
 
-  <body class="font-Montserrat">
-    <nav class="w-full h-14 hidden p-4 bg-white fixed z-10 lg:flex justify-between">
+  <body class="font-Montserrat dark:bg-gray-900">
+    <nav
+      class="w-full h-14 hidden p-4 bg-white fixed z-10 lg:flex justify-between dark:bg-gray-800"
+    >
       <div class="h-auto w-auto">
-        <p class="text-xl text-primary font-black">Travel Lovers</p>
+        <p class="text-xl text-primary font-black dark:text-white">
+          Travel Lovers
+        </p>
       </div>
       <div class="w-auto h-auto flex gap-4">
-        <a class="font-bold text-md text-primary" href="#home">Inicio</a>
-        <a class="font-bold text-md text-primary" href="#recomendados"
+        <a class="font-bold text-md text-primary dark:text-white" href="#home"
+          >Inicio</a
+        >
+        <a
+          class="font-bold text-md text-primary dark:text-white"
+          href="#recomendados"
           >Recomendados</a
         >
-        <a class="font-bold text-md text-primary" href="#rentas_destacadas"
+        <a
+          class="font-bold text-md text-primary dark:text-white"
+          href="#rentas_destacadas"
           >Rentas</a
         >
-        <a class="font-bold text-md text-primary" href="#faqs">FAQS</a>
-        <a class="font-bold text-md text-primary" href="#sobre_nosotros"
+        <a class="font-bold text-md text-primary dark:text-white" href="#faqs"
+          >FAQS</a
+        >
+        <a
+          class="font-bold text-md text-primary dark:text-white"
+          href="#sobre_nosotros"
           >Sobre Nosotros</a
         >
       </div>
@@ -45,22 +59,24 @@
             clip-rule="evenodd"
             d="M6 1.99997C4.93913 1.99997 3.92172 2.4214 3.17157 3.17155C2.42143 3.92169 2 4.93911 2 5.99997C2 7.06084 2.42143 8.07825 3.17157 8.8284C3.92172 9.57855 4.93913 9.99997 6 9.99997C7.06087 9.99997 8.07828 9.57855 8.82843 8.8284C9.57857 8.07825 10 7.06084 10 5.99997C10 4.93911 9.57857 3.92169 8.82843 3.17155C8.07828 2.4214 7.06087 1.99997 6 1.99997ZM1.13461e-07 5.99997C-0.00012039 5.05568 0.222642 4.12468 0.650171 3.28271C1.0777 2.44074 1.69792 1.71157 2.4604 1.1545C3.22287 0.597426 4.10606 0.228185 5.03815 0.0768059C5.97023 -0.0745733 6.92488 -0.00381595 7.82446 0.283323C8.72404 0.570462 9.54315 1.06587 10.2152 1.72927C10.8872 2.39266 11.3931 3.20531 11.6919 4.10111C11.9906 4.9969 12.0737 5.95056 11.9343 6.88452C11.795 7.81848 11.4372 8.70637 10.89 9.47597L15.707 14.293C15.8892 14.4816 15.99 14.7342 15.9877 14.9964C15.9854 15.2586 15.8802 15.5094 15.6948 15.6948C15.5094 15.8802 15.2586 15.9854 14.9964 15.9876C14.7342 15.9899 14.4816 15.8891 14.293 15.707L9.477 10.891C8.57936 11.5293 7.52335 11.9081 6.42468 11.9861C5.326 12.0641 4.22707 11.8381 3.2483 11.3329C2.26953 10.8278 1.44869 10.063 0.875723 9.12232C0.30276 8.18165 -0.000214051 7.10141 1.13461e-07 5.99997Z"
             fill="#3F3F46"
-            class="fill-current text-primary"
+            class="fill-current text-primary dark:text-white"
           />
         </svg>
-        <svg
-          width="16"
-          height="16"
-          viewBox="0 0 16 16"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M15.293 11.293C13.8115 11.9631 12.161 12.1658 10.5614 11.8742C8.96175 11.5826 7.48895 10.8105 6.33919 9.66079C5.18944 8.51104 4.41734 7.03824 4.12574 5.4386C3.83415 3.83897 4.03691 2.18846 4.70701 0.70697C3.52758 1.23998 2.49505 2.05117 1.69802 3.07093C0.900987 4.09069 0.363244 5.28859 0.130924 6.56186C-0.101395 7.83512 -0.0213565 9.14574 0.364174 10.3813C0.749705 11.6168 1.42922 12.7404 2.34442 13.6556C3.25961 14.5708 4.38318 15.2503 5.61871 15.6358C6.85424 16.0213 8.16486 16.1014 9.43813 15.8691C10.7114 15.6367 11.9093 15.099 12.9291 14.302C13.9488 13.5049 14.76 12.4724 15.293 11.293Z"
-            fill="#3F3F46"
-            class="fill-current text-primary"
-          />
-        </svg>
+        <button id="toggle">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15.293 11.293C13.8115 11.9631 12.161 12.1658 10.5614 11.8742C8.96175 11.5826 7.48895 10.8105 6.33919 9.66079C5.18944 8.51104 4.41734 7.03824 4.12574 5.4386C3.83415 3.83897 4.03691 2.18846 4.70701 0.70697C3.52758 1.23998 2.49505 2.05117 1.69802 3.07093C0.900987 4.09069 0.363244 5.28859 0.130924 6.56186C-0.101395 7.83512 -0.0213565 9.14574 0.364174 10.3813C0.749705 11.6168 1.42922 12.7404 2.34442 13.6556C3.25961 14.5708 4.38318 15.2503 5.61871 15.6358C6.85424 16.0213 8.16486 16.1014 9.43813 15.8691C10.7114 15.6367 11.9093 15.099 12.9291 14.302C13.9488 13.5049 14.76 12.4724 15.293 11.293Z"
+              fill="#3F3F46"
+              class="fill-current text-primary dark:text-primary"
+            />
+          </svg>
+        </button>
         <svg
           width="16"
           height="16"
@@ -115,10 +131,12 @@
           </div>
         </div>
       </div>
-      <div class="p-6" id="recomendados">
-        <p class="text-3xl font-semibold text-primary">Recomendados</p>
+      <div class="w-full h-auto" id="recomendados">
+        <p class="text-3xl font-semibold text-primary pl-6 pt-6">
+          Recomendados
+        </p>
         <div
-          class="w-auto h-72 items-center mt-6 overflow-x-auto overflow-y-hidden overscroll-x-contain flex space-x-6 scrollbar-hide md:scrollbar-default"
+          class="w-auto h-72 items-center mt-6 p-6 overflow-x-auto overflow-y-hidden overscroll-x-contain flex space-x-6 scrollbar-hide md:scrollbar-default"
         >
           <div class="Card">
             <img
@@ -127,7 +145,7 @@
               alt=""
             />
             <div
-              class="w-full h-2/5 rounded-b-lg bg-secondary text-white px-4 py-2"
+              class="w-full h-2/5 rounded-b-lg bg-secondary text-white px-4 py-2 dark:bg-gray-700"
             >
               <p class="text-bold text-xl">Norway</p>
               <p class="text-md">Beautiful landscapes</p>
@@ -140,7 +158,7 @@
               alt=""
             />
             <div
-              class="w-full h-2/5 rounded-b-lg bg-white text-terciary px-4 py-2"
+              class="w-full h-2/5 rounded-b-lg bg-white text-terciary px-4 py-2 dark:bg-gray-800 dark:text-white"
             >
               <p class="text-bold text-xl">New York</p>
               <p class="text-md">Concrete jungle</p>
@@ -153,7 +171,7 @@
               alt=""
             />
             <div
-              class="w-full h-2/5 rounded-b-lg bg-secondary text-white px-4 py-2"
+              class="w-full h-2/5 rounded-b-lg bg-secondary text-white px-4 py-2 dark:bg-gray-700"
             >
               <p class="text-bold text-xl">Yosemite</p>
               <p class="text-md">A break from the world</p>
@@ -166,7 +184,7 @@
               alt=""
             />
             <div
-              class="w-full h-2/5 rounded-b-lg bg-white text-terciary px-4 py-2"
+              class="w-full h-2/5 rounded-b-lg bg-white text-terciary px-4 py-2 dark:bg-gray-800 dark:text-white"
             >
               <p class="text-bold text-xl">Seattle</p>
               <p class="text-md">Big City</p>
@@ -179,7 +197,7 @@
               alt=""
             />
             <div
-              class="w-full h-2/5 rounded-b-lg bg-secondary text-white px-4 py-2"
+              class="w-full h-2/5 rounded-b-lg bg-secondary text-white px-4 py-2 dark:bg-gray-700"
             >
               <p class="text-bold text-xl">Switzerland</p>
               <p class="text-md">Big City</p>
@@ -192,7 +210,7 @@
               alt=""
             />
             <div
-              class="w-full h-2/5 rounded-b-lg bg-white text-terciary px-4 py-2"
+              class="w-full h-2/5 rounded-b-lg bg-white text-terciary px-4 py-2 dark:bg-gray-800 dark:text-white"
             >
               <p class="text-bold text-xl">Seattle</p>
               <p class="text-md">Big City</p>
@@ -205,7 +223,7 @@
               alt=""
             />
             <div
-              class="w-full h-2/5 rounded-b-lg bg-secondary text-white px-4 py-2"
+              class="w-full h-2/5 rounded-b-lg bg-secondary text-white px-4 py-2 dark:bg-gray-700"
             >
               <p class="text-bold text-xl">Switzerland</p>
               <p class="text-md">Big City</p>
@@ -218,7 +236,7 @@
               alt=""
             />
             <div
-              class="w-full h-2/5 rounded-b-lg bg-white text-terciary px-4 py-2"
+              class="w-full h-2/5 rounded-b-lg bg-white text-terciary px-4 py-2 dark:bg-gray-800 dark:text-white"
             >
               <p class="text-bold text-xl">Seattle</p>
               <p class="text-md">Big City</p>
@@ -231,7 +249,7 @@
               alt=""
             />
             <div
-              class="w-full h-2/5 rounded-b-lg bg-secondary text-white px-4 py-2"
+              class="w-full h-2/5 rounded-b-lg bg-secondary text-white px-4 py-2 dark:bg-gray-700"
             >
               <p class="text-bold text-xl">Switzerland</p>
               <p class="text-md">Big City</p>
@@ -305,39 +323,47 @@
         </div>
       </div>
       <div class="w-full h-full pb-10" id="faqs">
-        <div class="w-full h-auto px-6 flex flex-col gap-4">
-          <p class="text-3xl text-primary font-semibold mt-6">FAQS</p>
+        <div class="w-full h-auto px-6 flex flex-col gap-4 dark:text-white">
+          <p class="text-3xl text-primary font-semibold mt-6 dark:text-white">
+            FAQS
+          </p>
           <div>
-            <p class="text-xl font-medium text-primary">Cancellation Pollicy</p>
-            <p class="text-lg pt-2">
+            <p class="text-xl font-medium text-primary dark:text-white">
+              Cancellation Pollicy
+            </p>
+            <p class="text-lg pt-2 dark:text-gray-300">
               Para estancias menores a una semana es importante avisar con 3
               días de anticipación, de caso contario será sancionado.
             </p>
           </div>
           <div>
-            <p class="text-xl font-medium text-primary">Payment Methods</p>
-            <p class="">
+            <p class="text-xl font-medium text-primary dark:text-white">
+              Payment Methods
+            </p>
+            <p class="text-lg pt-2 dark:text-gray-300">
               Aceptamos distintos métodos de pago: VISA, MasterCard, American
               Express, Paypal y Binance
             </p>
           </div>
           <div>
-            <p class="text-xl font-medium text-primary">Pets</p>
-            <p class="">
+            <p class="text-xl font-medium text-primary dark:text-white">Pets</p>
+            <p class="text-lg pt-2 dark:text-gray-300">
               El tema de las mascotas dependerá directamente del anfitrión.
             </p>
           </div>
           <div>
-            <p class="text-xl font-medium text-primary">
+            <p class="text-xl font-medium text-primary dark:text-white">
               Información de Seguridad
             </p>
-            <p class="">
+            <p class="text-lg pt-2 dark:text-gray-300">
               Todas nuestras estancias cuentan con seguro en caso de accidentes
             </p>
           </div>
           <div>
-            <p class="text-xl font-medium text-primary">Long Stays</p>
-            <p class="">
+            <p class="text-xl font-medium text-primary dark:text-white">
+              Long Stays
+            </p>
+            <p class="text-lg pt-2 dark:text-gray-300">
               Contamos con estancias de hasta 3 meses, en este caso es requerido
               un anticipo con un monto del 50% del valor de la renta
             </p>
@@ -408,7 +434,7 @@
           />
         </svg>
       </a>
-      <button>
+      <button id="toggleSm">
         <svg
           width="36"
           height="36"
@@ -448,5 +474,6 @@
         </svg>
       </a>
     </div>
+    <script src="./main.js"></script>
   </body>
 </html>
